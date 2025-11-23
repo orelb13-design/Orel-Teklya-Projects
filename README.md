@@ -7,7 +7,8 @@
 
 Brief description: Building a DATABASE as part of a project in the DATA ANALYST and BI Expert course.
 
-🔗 [מעבר לפרויקט](./SQL)
+🔗 [מעבר לפרויקט](./SQL/README.md)
+)
 
 
 ### 2. SQL - Applying SQL commands to the WideWorldImporters DB
