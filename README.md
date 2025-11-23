@@ -28,6 +28,6 @@ Brief description: Selecting and loading a DATABASE from the Central Bureau of S
 
 Brief description: Data analysis and visualization for the DB I built in the first project.
 
-🔗 [מעבר לפרויקט](./PowerBI)
+🔗 [מעבר לפרויקט](./PYTHON)
 
 
