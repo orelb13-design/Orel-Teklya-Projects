@@ -4,7 +4,7 @@
 ## 📂 פרויקטים נבחרים
 
 ### 1. SQL - בניית DATABASE 
-🔗 [מעבר לפרויקט](./DATABASE)  
+🔗 [מעבר לפרויקט](./SQL Project 1)  
 תיאור קצר: בניית DATABASE כחלק מפרויקט בקורס DANA ANALYST and BI Expert.
 ### 2. SQL - יישום פקודות SQL על DB WideWorldImporters DB
 🔗 [מעבר לפרויקט](./WideWorldImporters)
