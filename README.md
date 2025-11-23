@@ -3,21 +3,23 @@
 
 ## 📂 פרויקטים נבחרים
 
-### 1. SQL - בניית DATABASE 
+### 1. SQL - Building a database
 🔗 [מעבר לפרויקט](./SQL)
 
-תיאור קצר: בניית DATABASE כחלק מפרויקט בקורס DANA ANALYST and BI Expert.
-### 2. SQL - יישום פקודות SQL על DB WideWorldImporters DB
-🔗 [מעבר לפרויקט](./WideWorldImporters)
-תיאור קצר: מענה על שאלות וכתיבת שאילתות מורכבות בSQL על WideWorldImporters DB כחלק מפרויקט שני בקורס. 
+Brief description: Building a DATABASE as part of a project in the DATA ANALYST and BI Expert course.
 
-### 3. PYTHON - יישום פקודות SQL על DB WideWorldImporters DB
+### 2. SQL - Applying SQL commands to the WideWorldImporters DB
+🔗 [מעבר לפרויקט](./SQL_2)
+Brief description: Answering questions and writing complex SQL queries on WideWorldImporters DB as part of the second project in the course. 
+
+### 3. PYTHON - Applying commands and analyzing data on an existing file from the Internet
 � [מעבר לפרויקט](./PYTHON)
-תיאור קצר: בחירה וטעינת DATABASE מתוך הלשכה המרכזית לסטטיסטיקה ובניית שאילתות וגרפים.
+Brief description: Selecting and loading a DATABASE from the Central Bureau of Statistics and building queries and graphs.
 
-### 4. Power BI - בניית דשבורד וניתוח נתונים עבור הDATABASE שבניתי בפרויקט הראשון
+### 4. Power BI - Building a dashboard and analyzing data for DB
+
+Brief description: Data analysis and visualization for the DB I built in the first project.
 
 � [מעבר לפרויקט](./PowerBI)
-תיאור קצר: ניתוח נתונים וביצוע ויזואליזציה לDB שבניתי בפרויקט הראשון.
 
 
