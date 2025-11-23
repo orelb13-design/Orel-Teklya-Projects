@@ -1,6 +1,6 @@
-# שלום, אני אוראל טקליה ואני DATA ANALYST 👋
-אני עוסקת ב-Power BI וניתוח נתונים. כאן תוכלו לראות את הפרויקטים שלי.
+# Hello, my name is Orel Teklya and I am DATA ANALYST 👋
 
+I specialize in Power BI and data analysis. Here you can see my projects.
 ## 📂 פרויקטים נבחרים
 
 ### 1. SQL - Building a database
