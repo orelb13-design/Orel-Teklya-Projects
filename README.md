@@ -4,7 +4,8 @@
 ## 📂 פרויקטים נבחרים
 
 ### 1. SQL - בניית DATABASE 
-🔗 [מעבר לפרויקט](./https://github.com/orelb13-design/Orel-Teklya-Projects/commit/285e085643aebcd4d1929e9d2dc338c94fe3b8b6)  
+🔗 [מעבר לפרויקט](SQL/README.md)
+
 תיאור קצר: בניית DATABASE כחלק מפרויקט בקורס DANA ANALYST and BI Expert.
 ### 2. SQL - יישום פקודות SQL על DB WideWorldImporters DB
 🔗 [מעבר לפרויקט](./WideWorldImporters)
