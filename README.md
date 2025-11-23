@@ -7,7 +7,7 @@
 
 Brief description: Building a DATABASE as part of a project in the DATA ANALYST and BI Expert course.
 
-🔗 [מעבר לפרויקט](./SQL/README.md)
+🔗 [מעבר לפרויקט](./SQL)
 )
 
 
