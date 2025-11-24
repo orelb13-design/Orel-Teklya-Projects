@@ -53,6 +53,7 @@ Brief description: Data analysis and visualization using Data Model, DAX, Visual
 ## 📬 Contact details
 
 Phone number: 052-3433709
+
 E-Mail: orelb13@gmail.com 
  
 
