@@ -7,7 +7,7 @@ I specialize in Power BI and data analysis. Here you can see my projects.
 
 Brief description: Building a DATABASE as part of a project in the DATA ANALYST and BI Expert course.
 
-🔗[מעבר לקובץ](./SQL/Project_1.sql)
+🔗[מעבר לפרויקט SQL הראשון](./SQL/Project_1.sql)
 
 
 
@@ -15,7 +15,7 @@ Brief description: Building a DATABASE as part of a project in the DATA ANALYST 
 
 Brief description: Answering questions and writing complex SQL queries on WideWorldImporters DB as part of the second project in the course. 
 
-🔗 [פרויקט 2 – SQL_2](./SQL_2/Project_2.sql)
+🔗 [מעבר לפרויקט SQL השני](./SQL_2/Project_2.sql)
 
 
 ### 3. PYTHON - Applying commands and analyzing data on an existing file from the Internet
