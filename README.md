@@ -15,7 +15,7 @@ Brief description: Building a DATABASE as part of a project in the DATA ANALYST 
 
 Brief description: Answering questions and writing complex SQL queries on WideWorldImporters DB as part of the second project in the course. 
 
-🔗 [מעבר לפרויקט](./SQL_2)
+🔗 [פרויקט 2 – SQL_2](./SQL_2/Project_2.sql)
 
 
 ### 3. PYTHON - Applying commands and analyzing data on an existing file from the Internet
