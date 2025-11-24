@@ -14,6 +14,7 @@ Brief description: Building a DATABASE as part of a project in the DATA ANALYST 
 📄 Open the file:
 
 👉 [Project_1.sql](./SQL/Project_1.sql)
+
 ---
 
 #### 🔹 Project 2 – SQL
