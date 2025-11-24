@@ -26,9 +26,9 @@ Brief description: Advanced SQL queries including window functions, CTEs, and co
 👉 [Project_2.sql](./SQL_2/Project_2.sql)
 
 ---
-### 🐍 Python Project
+### 🐍 Python Projects
 
-#### 🔹 Python Project 
+#### 🔹 Project 1 - Python 
 
 Brief description: Selecting and loading a DATABASE from the Central Bureau of Statistics and building queries using Pandas, visualization, and ETL scripting.
 
@@ -38,28 +38,22 @@ Brief description: Selecting and loading a DATABASE from the Central Bureau of S
 
 ---
 
-## 📈 פרויקטים ב-Power BI
+### 📈 Power BI Projects
 
-### 🔹 פרויקט Power BI (בקרוב)  
-**תיאור קצר:** מודל נתונים, DAX, ויזואליזציות ודוחות אינטראקטיביים.
+#### 🔹 Project 1 - Power BI  
 
-📁 התיקייה: `PowerBI/`  
-(אוסיף קישור ישיר כשאת תעלי את קובץ ה-PBIX)
+Brief description: Data analysis and visualization using Data Model, DAX, Visualizations, and Interactive Reports.
+
+📄 Open the file:
+
+👉[Project_3.py](./PYTHON/Project_3.py)
 
 ---
 
-## 📬 יצירת קשר
+## 📬 Contact details
 
-אם תרצי לראות עוד פרויקטים, לקבל הסבר או לשתף קבצים נוספים — אשמח לעזור.  
-
-
-
-
-
-### 4. Power BI - Building a dashboard and analyzing data for DB
-
-Brief description: Data analysis and visualization for the DB I built in the first project.
-
-🔗 [מעבר לפרויקט](./PYTHON)
+Phone number: 052-3433709
+E-Mail: orelb13@gmail.com 
+ 
 
 
