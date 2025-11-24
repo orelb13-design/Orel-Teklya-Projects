@@ -7,7 +7,7 @@ I specialize in Power BI and data analysis. Here you can see my projects.
 
 Brief description: Building a DATABASE as part of a project in the DATA ANALYST and BI Expert course.
 
-🔗[מעבר לפרויקט](./SQL)
+🔗[מעבר לקובץ](./SQL/Project_1.sql)
 
 
 
