@@ -47,6 +47,7 @@ Brief description: Data analysis and visualization using Data Model, DAX, Visual
 📄 Open the file:
 
 👉[Project_4.pbix](./Power_BI/Project_4.pbix)
+👉PDF of the project (./Power_BI/Project_4.pdf)
 
 ---
 
