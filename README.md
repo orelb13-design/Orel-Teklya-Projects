@@ -42,11 +42,11 @@ Brief description: Selecting and loading a DATABASE from the Central Bureau of S
 
 #### 🔹 Project 1 - Power BI  
 
-Brief description: Data analysis and visualization using Data Model, DAX, Visualizations, and Interactive Reports.
+Brief description: Data analysis and visualization using Data Model, DAX, Visualizations, and Interactive Reports of Education report that combains school, student, grade, and teacher data reports
 
 📄 Open the file:
 
-👉[Project_3.py](./PYTHON/Project_3.py)
+👉[Project_4.pbix](./Power_BI/Project_4.pbix)
 
 ---
 
