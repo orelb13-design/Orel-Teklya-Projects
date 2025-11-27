@@ -48,7 +48,8 @@ Brief description: Data analysis and visualization using Data Model, DAX, Visual
 
 👉[Project_4.pbix](./Project_4.pbix)
 
-👉PDF of the project (./Power_BI/Project_4.pdf)
+👉 [PDF of the Project_4](https://github.com/Orel-Teklya/Orel-Teklya-Projects/blob/main/Project_4.pdf)
+
 
 ---
 
