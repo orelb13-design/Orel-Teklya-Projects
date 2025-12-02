@@ -34,7 +34,7 @@ Brief description: Selecting and loading a DATABASE from the Central Bureau of S
 
 📄 Open the file:
 
-👉[Project_3.py](./PYTHON/Project_3.py)
+👉[project3a.ipynb](./PYTHON/project3a.ipynb)
 
 ---
 
