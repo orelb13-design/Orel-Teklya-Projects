@@ -7,7 +7,7 @@
     /* --- גוף האתר --- */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdfcfb; /* רקע פסטלי בהיר */
+      background: linear-gradient(to bottom right, #fdfbfb, #ebedfa); /* רקע פסטלי עדין */
       color: #333;
       margin: 0;
       padding: 0;
@@ -16,7 +16,7 @@
 
     /* --- כותרת ראשית --- */
     header {
-      background: linear-gradient(135deg, #a8edea, #fed6e3); /* גרדיאנט פסטלי עדין */
+      background: linear-gradient(135deg, #a8edea, #fed6e3); /* גרדיאנט פסטלי */
       color: #444;
       text-align: center;
       padding: 60px 20px;
@@ -29,47 +29,63 @@
 
     /* --- קונטיינר --- */
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
     /* --- כותרות --- */
     h2 {
-      color: #ff9a9e; /* צבע פסטלי עדין */
+      color: #ff9a9e;
       margin-top: 40px;
-      border-bottom: 2px solid #a1c4fd;
       padding-bottom: 5px;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
 
-    h3 {
-      color: #6a85b6;
-      margin-top: 25px;
+    /* --- פרויקטים בריבועים/עגולים --- */
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
 
-    /* --- קופסאות פרויקט --- */
     .project {
       background: linear-gradient(145deg, #ffffff, #f0f4f8);
-      border-left: 5px solid #a1c4fd;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 12px;
-      transition: all 0.3s ease;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      width: 220px;
+      height: 220px;
+      border-radius: 20px; /* אפשר לשנות ל-50% לעיגול */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .project:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(161,196,253,0.3);
-      border-left-color: #ff9a9e;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(161,196,253,0.3);
+    }
+
+    .project h3 {
+      color: #6a85b6;
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    .project p {
+      font-size: 0.9em;
+      margin: 5px 0;
     }
 
     .project a {
       color: #ff9a9e;
-      text-decoration: none;
       font-weight: bold;
+      text-decoration: none;
     }
 
     .project a:hover {
@@ -91,6 +107,7 @@
       padding: 30px 20px;
       border-radius: 12px 12px 0 0;
       box-shadow: 0 -3px 10px rgba(0,0,0,0.05);
+      margin-top: 40px;
     }
 
     footer a {
@@ -98,6 +115,13 @@
       text-decoration: underline;
     }
 
+    /* --- רספונסיביות --- */
+    @media (max-width: 768px) {
+      .projects-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -107,42 +131,43 @@
     Orel Teklya – Portfolio 🚀
   </header>
 
-  <!-- תוכן האתר -->
   <div class="container">
     <p>Hello, my name is <strong>Orel Teklya</strong> and I specialize in Data Analysis and BI.</p>
     <p>Welcome to my professional portfolio! Here you can find projects in SQL, Python, and Power BI.</p>
 
     <!-- SQL Projects -->
     <h2>📊 SQL Projects</h2>
-
-    <div class="project">
-      <h3>🔹 Project 1 – SQL</h3>
-      <p>Brief description: Building a DATABASE as part of a project in the DATA ANALYST and BI Expert course.</p>
-      <p>📄 Open the file: <a href="./SQL/Project_1.sql">Project_1.sql</a></p>
-    </div>
-
-    <div class="project">
-      <h3>🔹 Project 2 – SQL</h3>
-      <p>Brief description: Advanced SQL queries including window functions, CTEs, and complex data analysis.</p>
-      <p>📄 Open the file: <a href="./SQL_2/Project_2.sql">Project_2.sql</a></p>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Project 1 – SQL</h3>
+        <p>Database project for BI course.</p>
+        <p><a href="./SQL/Project_1.sql">Open File</a></p>
+      </div>
+      <div class="project">
+        <h3>Project 2 – SQL</h3>
+        <p>Advanced queries with CTEs and window functions.</p>
+        <p><a href="./SQL_2/Project_2.sql">Open File</a></p>
+      </div>
     </div>
 
     <!-- Python Projects -->
     <h2>🐍 Python Projects</h2>
-
-    <div class="project">
-      <h3>🔹 Project 1 – Python</h3>
-      <p>Brief description: Selecting and loading a DATABASE from the Central Bureau of Statistics, building queries with Pandas, visualization, and ETL scripting.</p>
-      <p>📄 Open the file: <a href="./PYTHON/project3a.ipynb">project3a.ipynb</a></p>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Project 1 – Python</h3>
+        <p>Pandas, ETL, data visualization.</p>
+        <p><a href="./PYTHON/project3a.ipynb">Open File</a></p>
+      </div>
     </div>
 
     <!-- Power BI Projects -->
     <h2>📈 Power BI Projects</h2>
-
-    <div class="project">
-      <h3>🔹 Project 1 – Power BI</h3>
-      <p>Brief description: Data analysis and visualization using Data Model, DAX, Visualizations, and Interactive Reports of Education report that combines school, student, grade, and teacher data.</p>
-      <p>📄 Open the file: <a href="./Power_BI/Project_4.pbix">Project_4.pbix</a> | <a href="./Power_BI/Project_4.pdf">PDF of Project_4</a></p>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Project 1 – Power BI</h3>
+        <p>Data analysis & interactive reports.</p>
+        <p><a href="./Power_BI/Project_4.pbix">Open PBIX</a> | <a href="./Power_BI/Project_4.pdf">PDF</a></p>
+      </div>
     </div>
 
     <hr>
@@ -153,7 +178,7 @@
       <p>Phone: 052-3433709</p>
       <p>Email: <a href="mailto:orelb13@gmail.com">orelb13@gmail.com</a></p>
     </footer>
-
   </div>
+
 </body>
 </html>
