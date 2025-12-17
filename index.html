@@ -10,18 +10,6 @@
       margin: 0;
       padding: 0;
       color: #333;
-      position: relative;
-    }
-
-    /* --- תמונה צפה בצד --- */
-    .floating-img {
-      position: fixed;
-      top: 100px;
-      right: 20px;
-      width: 180px;
-      opacity: 0.2;
-      pointer-events: none;
-      z-index: 0;
     }
 
     header {
@@ -39,8 +27,26 @@
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
-      position: relative;
-      z-index: 1;
+    }
+
+    /* --- טקסט + תמונה בצד --- */
+    .header-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .header-content .text-content {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .header-content .image-content img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 12px;
     }
 
     h2 {
@@ -89,6 +95,8 @@
       border-radius: 6px;
       font-weight: bold;
       transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-bottom: 10px;
     }
 
     .project a:hover {
@@ -115,27 +123,36 @@
     }
 
     @media (max-width: 768px) {
-      .projects-grid {
+      .header-content {
         flex-direction: column;
         align-items: center;
       }
-      .floating-img {
-        display: none;
+      .header-content .image-content img {
+        max-width: 80%;
+        margin-top: 20px;
+      }
+      .projects-grid {
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- תמונה צפה בצד -->
-  <img src="assets/picture.webp" alt="Tech" class="floating-img">
-
   <header>
     Orel Teklya – Portfolio
   </header>
 
   <div class="container">
-    <p>Hello, my name is <strong>Orel Teklya</strong> and I specialize in Data Analysis and BI.</p>
+    <div class="header-content">
+      <div class="text-content">
+        <p>Hello, my name is <strong>Orel Teklya</strong> and I specialize in Data Analysis and BI.</p>
+      </div>
+      <div class="image-content">
+        <img src="assets/picture.webp" alt="Tech">
+      </div>
+    </div>
 
     <h2>📊 SQL Projects</h2>
     <div class="projects-grid">
