@@ -4,39 +4,38 @@
   <meta charset="UTF-8">
   <title>Orel Teklya Portfolio</title>
   <style>
-    /* --- סגנון גוף האתר --- */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f2f5;
+      background-color: #f8f9fc; /* פסטלי בהיר */
       margin: 0;
       padding: 0;
       color: #333;
       line-height: 1.6;
     }
 
-    /* --- כותרת ראשית --- */
+    /* כותרת ראשית */
     header {
-      background: linear-gradient(120deg, #6a11cb, #2575fc);
-      color: white;
+      background: linear-gradient(120deg, #a8edea, #fed6e3); /* פסטלי עדין */
+      color: #333;
       text-align: center;
       padding: 60px 20px;
       font-family: 'Arial Black', sans-serif;
       font-size: 2.5em;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 0 0 20px 20px;
     }
 
-    /* --- קונטיינר לכל התוכן --- */
+    /* קונטיינר */
     .container {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
-    /* --- כותרות משנה --- */
     h2 {
       color: #444;
       margin-top: 40px;
-      border-bottom: 2px solid #2575fc;
+      border-bottom: 2px solid #a8edea;
       padding-bottom: 5px;
     }
 
@@ -45,42 +44,48 @@
       margin-top: 25px;
     }
 
-    /* --- קופסאות פרויקט --- */
+    /* קופסאות פרויקט כריבועים */
     .project {
-      background-color: white;
-      padding: 15px 20px;
-      margin: 15px 0;
-      border-radius: 12px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     }
 
     .project:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      background: #f0f4ff; /* שינוי קל בעת Hover */
     }
 
     .project a {
+      display: inline-block;
+      margin-top: 10px;
       color: #2575fc;
       text-decoration: none;
       font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background-color: #e0eaff;
+      transition: background 0.3s ease, color 0.3s ease;
     }
 
     .project a:hover {
-      text-decoration: underline;
+      background-color: #2575fc;
+      color: #fff;
     }
 
-    /* --- קו מפריד --- */
     hr {
       margin: 40px 0;
       border: none;
       border-top: 1px solid #ccc;
     }
 
-    /* --- פרטי קשר --- */
     footer {
-      background-color: #2575fc;
-      color: white;
+      background: linear-gradient(120deg, #a8edea, #fed6e3);
+      color: #333;
       text-align: center;
       padding: 30px 20px;
       margin-top: 50px;
@@ -88,19 +93,18 @@
     }
 
     footer a {
-      color: white;
+      color: #2575fc;
       text-decoration: underline;
     }
+
   </style>
 </head>
 <body>
 
-  <!-- כותרת ראשית -->
   <header>
     Welcome to My Portfolio! 🎉
   </header>
 
-  <!-- תוכן האתר -->
   <div class="container">
     <p>Hello, my name is <strong>Orel Teklya</strong> and I specialize in Data Analysis and BI.</p>
     <p>Welcome to my professional portfolio! Here you can find a collection of projects I completed in SQL, Python, and Power BI.</p>
@@ -140,7 +144,6 @@
 
     <hr>
 
-    <!-- פרטי קשר -->
     <footer>
       <p>📬 Contact Me</p>
       <p>Phone: 052-3433709</p>
