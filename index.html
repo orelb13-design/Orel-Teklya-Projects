@@ -15,7 +15,7 @@
 
     /* כותרת ראשית */
     header {
-      background: linear-gradient(120deg, #a8edea, #fed6e3); /* פסטלי עדין */
+      background: linear-gradient(120deg, #a8edea, #fed6e3);
       color: #333;
       text-align: center;
       padding: 60px 20px;
@@ -44,7 +44,7 @@
       margin-top: 25px;
     }
 
-    /* קופסאות פרויקט כריבועים */
+    /* כרטיסי פרויקט */
     .project {
       background-color: #ffffff;
       padding: 20px;
@@ -57,24 +57,36 @@
     .project:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      background: #f0f4ff; /* שינוי קל בעת Hover */
+      background: #f0f4ff;
     }
 
-    .project a {
-      display: inline-block;
+    .project p {
+      margin: 10px 0;
+    }
+
+    /* שורת כפתורים */
+    .buttons-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
       margin-top: 10px;
-      color: #2575fc;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 6px 12px;
-      border-radius: 8px;
-      background-color: #e0eaff;
-      transition: background 0.3s ease, color 0.3s ease;
     }
 
-    .project a:hover {
+    /* כפתורים עגולים */
+    .btn {
+      display: inline-block;
+      padding: 8px 18px;
+      border-radius: 25px;
       background-color: #2575fc;
-      color: #fff;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #8f94fb;
+      transform: translateY(-2px);
     }
 
     hr {
@@ -97,6 +109,12 @@
       text-decoration: underline;
     }
 
+    @media (max-width: 768px) {
+      .buttons-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
 <body>
@@ -115,31 +133,40 @@
     <div class="project">
       <h3>🔹 Project 1 – SQL</h3>
       <p>Brief description: Building a DATABASE as part of a project in the DATA ANALYST and BI Expert course.</p>
-      <p>📄 Open the file: <a href="./SQL/Project_1.sql">Project_1.sql</a></p>
+      <div class="buttons-row">
+        <a href="./SQL/Project_1.sql" class="btn">Project_1.sql</a>
+        <a href="./SQL/README.md" class="btn">Readme</a>
+      </div>
     </div>
 
     <div class="project">
       <h3>🔹 Project 2 – SQL</h3>
       <p>Brief description: Advanced SQL queries including window functions, CTEs, and complex data analysis.</p>
-      <p>📄 Open the file: <a href="./SQL_2/Project_2.sql">Project_2.sql</a></p>
+      <div class="buttons-row">
+        <a href="./SQL_2/Project_2.sql" class="btn">Project_2.sql</a>
+        <a href="./SQL_2/README.md" class="btn">Readme</a>
+      </div>
     </div>
 
     <!-- Python Projects -->
     <h2>🐍 Python Projects</h2>
-
     <div class="project">
       <h3>🔹 Project 1 – Python</h3>
       <p>Brief description: Selecting and loading a DATABASE from the Central Bureau of Statistics, building queries with Pandas, visualization, and ETL scripting.</p>
-      <p>📄 Open the file: <a href="./PYTHON/project3a.ipynb">project3a.ipynb</a></p>
+      <div class="buttons-row">
+        <a href="./PYTHON/project3a.ipynb" class="btn">project3a.ipynb</a>
+      </div>
     </div>
 
     <!-- Power BI Projects -->
     <h2>📈 Power BI Projects</h2>
-
     <div class="project">
       <h3>🔹 Project 1 – Power BI</h3>
       <p>Brief description: Data analysis and visualization using Data Model, DAX, Visualizations, and Interactive Reports of Education report that combines school, student, grade, and teacher data.</p>
-      <p>📄 Open the file: <a href="./Power_BI/Project_4.pbix">Project_4.pbix</a> | <a href="./Power_BI/Project_4.pdf">PDF of Project_4</a></p>
+      <div class="buttons-row">
+        <a href="./Power_BI/Project_4.pbix" class="btn">Project_4.pbix</a>
+        <a href="./Power_BI/Project_4.pdf" class="btn">PDF</a>
+      </div>
     </div>
 
     <hr>
