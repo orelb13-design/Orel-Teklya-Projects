@@ -6,21 +6,21 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f6fa; /* רקע בהיר */
+      background-color: #f5f6fa; 
       margin: 0;
       padding: 0;
       color: #333;
     }
 
     header {
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* צבעים בולטים */
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: #fff;
       text-align: center;
       padding: 60px 20px;
       font-size: 2.8em;
       font-weight: bold;
       border-radius: 0 0 20px 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      color: #fff;
     }
 
     .container {
@@ -33,7 +33,7 @@
       margin-top: 40px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #ff6f61; /* כותרת בולטת */
+      color: #4e54c8;
     }
 
     .projects-grid {
@@ -45,44 +45,58 @@
     }
 
     .project {
-      width: 220px;
-      height: 220px;
-      border-radius: 15px;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 15px;
+      width: 280px;
+      border-radius: 12px;
+      background-color: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
+      text-align: center;
     }
 
-    /* צבעי פרויקטים בולטים */
-    .project.sql { background: #ff6f61; }
-    .project.sql2 { background: #ffb347; }
-    .project.python { background: #6a85b6; }
-    .project.powerbi { background: #00c6ff; }
+    .project img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
 
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    .project-content {
+      padding: 15px;
     }
 
     .project h3 {
       margin: 10px 0;
-      font-size: 1.1em;
+      font-size: 1.2em;
+      color: #4e54c8;
+    }
+
+    .project p {
+      font-size: 0.95em;
+      color: #555;
+      margin: 5px 0 10px;
     }
 
     .project a {
+      text-decoration: none;
       color: #fff;
+      background-color: #4e54c8;
+      padding: 8px 12px;
+      border-radius: 6px;
       font-weight: bold;
-      text-decoration: underline;
+      transition: background-color 0.3s ease;
+    }
+
+    .project a:hover {
+      background-color: #8f94fb;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(78,84,200,0.4);
     }
 
     footer {
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
       color: #fff;
       text-align: center;
       padding: 30px 20px;
@@ -106,44 +120,54 @@
 <body>
 
   <header>
-    Orel Teklya – Portfolio 🚀
+    Orel Teklya – Portfolio
   </header>
 
   <div class="container">
     <p>Hello, my name is <strong>Orel Teklya</strong> and I specialize in Data Analysis and BI.</p>
 
-    <!-- SQL Projects -->
     <h2>📊 SQL Projects</h2>
     <div class="projects-grid">
-      <div class="project sql">
-        <h3>Project 1 – SQL</h3>
-        <p>Database project for BI course.</p>
-        <p><a href="./SQL/Project_1.sql">Open File</a></p>
+      <div class="project">
+        <img src="SQL/project1.png" alt="Project 1 SQL">
+        <div class="project-content">
+          <h3>Project 1 – SQL</h3>
+          <p>Database project for BI course.</p>
+          <a href="./SQL/Project_1.sql">Open File</a>
+        </div>
       </div>
-      <div class="project sql2">
-        <h3>Project 2 – SQL</h3>
-        <p>Advanced queries with CTEs.</p>
-        <p><a href="./SQL_2/Project_2.sql">Open File</a></p>
+
+      <div class="project">
+        <img src="SQL_2/project2.png" alt="Project 2 SQL">
+        <div class="project-content">
+          <h3>Project 2 – SQL</h3>
+          <p>Advanced queries with CTEs.</p>
+          <a href="./SQL_2/Project_2.sql">Open File</a>
+        </div>
       </div>
     </div>
 
-    <!-- Python Projects -->
     <h2>🐍 Python Projects</h2>
     <div class="projects-grid">
-      <div class="project python">
-        <h3>Project 1 – Python</h3>
-        <p>Pandas, ETL, data visualization.</p>
-        <p><a href="./PYTHON/project3a.ipynb">Open File</a></p>
+      <div class="project">
+        <img src="PYTHON/project3.png" alt="Project Python">
+        <div class="project-content">
+          <h3>Project 1 – Python</h3>
+          <p>Pandas, ETL, data visualization.</p>
+          <a href="./PYTHON/project3a.ipynb">Open File</a>
+        </div>
       </div>
     </div>
 
-    <!-- Power BI Projects -->
     <h2>📈 Power BI Projects</h2>
     <div class="projects-grid">
-      <div class="project powerbi">
-        <h3>Project 1 – Power BI</h3>
-        <p>Data analysis & interactive reports.</p>
-        <p><a href="./Power_BI/Project_4.pbix">Open PBIX</a> | <a href="./Power_BI/Project_4.pdf">PDF</a></p>
+      <div class="project">
+        <img src="Power_BI/project4.png" alt="Project Power BI">
+        <div class="project-content">
+          <h3>Project 1 – Power BI</h3>
+          <p>Data analysis & interactive reports.</p>
+          <a href="./Power_BI/Project_4.pbix">Open PBIX</a>
+        </div>
       </div>
     </div>
 
@@ -151,7 +175,6 @@
       <p>📬 Contact Me</p>
       <p>Phone: 052-3433709 | Email: <a href="mailto:orelb13@gmail.com">orelb13@gmail.com</a></p>
     </footer>
-
   </div>
 
 </body>
