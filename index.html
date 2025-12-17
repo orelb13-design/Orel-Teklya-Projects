@@ -4,118 +4,97 @@
   <meta charset="UTF-8">
   <title>Orel Teklya Portfolio</title>
   <style>
-    /* --- גוף האתר --- */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #fdfbfb, #ebedfa); /* רקע פסטלי עדין */
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f6fa; /* רקע בהיר */
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      color: #333;
     }
 
-    /* --- כותרת ראשית --- */
     header {
-      background: linear-gradient(135deg, #a8edea, #fed6e3); /* גרדיאנט פסטלי */
-      color: #444;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* צבעים בולטים */
       text-align: center;
       padding: 60px 20px;
       font-size: 2.8em;
       font-weight: bold;
-      letter-spacing: 1px;
       border-radius: 0 0 20px 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      color: #fff;
     }
 
-    /* --- קונטיינר --- */
     .container {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
-    /* --- כותרות --- */
     h2 {
-      color: #ff9a9e;
       margin-top: 40px;
-      padding-bottom: 5px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      color: #ff6f61; /* כותרת בולטת */
     }
 
-    /* --- פרויקטים בריבועים/עגולים --- */
     .projects-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
+      margin-top: 20px;
     }
 
     .project {
-      background: linear-gradient(145deg, #ffffff, #f0f4f8);
       width: 220px;
       height: 220px;
-      border-radius: 20px; /* אפשר לשנות ל-50% לעיגול */
+      border-radius: 15px;
+      color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
     }
+
+    /* צבעי פרויקטים בולטים */
+    .project.sql { background: #ff6f61; }
+    .project.sql2 { background: #ffb347; }
+    .project.python { background: #6a85b6; }
+    .project.powerbi { background: #00c6ff; }
 
     .project:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(161,196,253,0.3);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
 
     .project h3 {
-      color: #6a85b6;
       margin: 10px 0;
       font-size: 1.1em;
     }
 
-    .project p {
-      font-size: 0.9em;
-      margin: 5px 0;
-    }
-
     .project a {
-      color: #ff9a9e;
+      color: #fff;
       font-weight: bold;
-      text-decoration: none;
-    }
-
-    .project a:hover {
       text-decoration: underline;
     }
 
-    /* --- קו מפריד --- */
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 40px 0;
-    }
-
-    /* --- פרטי קשר --- */
     footer {
-      background: linear-gradient(135deg, #a8edea, #fed6e3);
-      color: #444;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #fff;
       text-align: center;
       padding: 30px 20px;
       border-radius: 12px 12px 0 0;
-      box-shadow: 0 -3px 10px rgba(0,0,0,0.05);
       margin-top: 40px;
     }
 
     footer a {
-      color: #6a85b6;
+      color: #fff;
       text-decoration: underline;
     }
 
-    /* --- רספונסיביות --- */
     @media (max-width: 768px) {
       .projects-grid {
         flex-direction: column;
@@ -126,26 +105,24 @@
 </head>
 <body>
 
-  <!-- כותרת ראשית -->
   <header>
     Orel Teklya – Portfolio 🚀
   </header>
 
   <div class="container">
     <p>Hello, my name is <strong>Orel Teklya</strong> and I specialize in Data Analysis and BI.</p>
-    <p>Welcome to my professional portfolio! Here you can find projects in SQL, Python, and Power BI.</p>
 
     <!-- SQL Projects -->
     <h2>📊 SQL Projects</h2>
     <div class="projects-grid">
-      <div class="project">
+      <div class="project sql">
         <h3>Project 1 – SQL</h3>
         <p>Database project for BI course.</p>
         <p><a href="./SQL/Project_1.sql">Open File</a></p>
       </div>
-      <div class="project">
+      <div class="project sql2">
         <h3>Project 2 – SQL</h3>
-        <p>Advanced queries with CTEs and window functions.</p>
+        <p>Advanced queries with CTEs.</p>
         <p><a href="./SQL_2/Project_2.sql">Open File</a></p>
       </div>
     </div>
@@ -153,7 +130,7 @@
     <!-- Python Projects -->
     <h2>🐍 Python Projects</h2>
     <div class="projects-grid">
-      <div class="project">
+      <div class="project python">
         <h3>Project 1 – Python</h3>
         <p>Pandas, ETL, data visualization.</p>
         <p><a href="./PYTHON/project3a.ipynb">Open File</a></p>
@@ -163,21 +140,18 @@
     <!-- Power BI Projects -->
     <h2>📈 Power BI Projects</h2>
     <div class="projects-grid">
-      <div class="project">
+      <div class="project powerbi">
         <h3>Project 1 – Power BI</h3>
         <p>Data analysis & interactive reports.</p>
         <p><a href="./Power_BI/Project_4.pbix">Open PBIX</a> | <a href="./Power_BI/Project_4.pdf">PDF</a></p>
       </div>
     </div>
 
-    <hr>
-
-    <!-- פרטי קשר -->
     <footer>
       <p>📬 Contact Me</p>
-      <p>Phone: 052-3433709</p>
-      <p>Email: <a href="mailto:orelb13@gmail.com">orelb13@gmail.com</a></p>
+      <p>Phone: 052-3433709 | Email: <a href="mailto:orelb13@gmail.com">orelb13@gmail.com</a></p>
     </footer>
+
   </div>
 
 </body>
