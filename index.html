@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <title>Orel Teklya Portfolio</title>
   <style>
-    /* --- גוף האתר --- */
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f6fa; /* רקע בהיר ונקי */
+      background-color: #f5f6fa;
       margin: 0;
       padding: 0;
       color: #333;
@@ -20,12 +19,11 @@
       top: 100px;
       right: 20px;
       width: 180px;
-      opacity: 0.2;      /* שקיפות עדינה */
+      opacity: 0.2;
       pointer-events: none;
       z-index: 0;
     }
 
-    /* --- כותרת ראשית --- */
     header {
       background: linear-gradient(135deg, #4e54c8, #8f94fb);
       color: #fff;
@@ -42,7 +40,7 @@
       margin: 40px auto;
       padding: 0 20px;
       position: relative;
-      z-index: 1; /* כדי להיות מעל התמונה הצפה */
+      z-index: 1;
     }
 
     h2 {
@@ -52,7 +50,6 @@
       color: #4e54c8;
     }
 
-    /* --- גריד כרטיסי פרויקטים --- */
     .projects-grid {
       display: flex;
       flex-wrap: wrap;
@@ -103,7 +100,6 @@
       box-shadow: 0 10px 25px rgba(78,84,200,0.4);
     }
 
-    /* --- Footer --- */
     footer {
       background: linear-gradient(135deg, #4e54c8, #8f94fb);
       color: #fff;
@@ -118,14 +114,13 @@
       text-decoration: underline;
     }
 
-    /* --- רספונסיביות --- */
     @media (max-width: 768px) {
       .projects-grid {
         flex-direction: column;
         align-items: center;
       }
       .floating-img {
-        display: none; /* מוסיפים למובייל אם רוצים */
+        display: none;
       }
     }
   </style>
@@ -133,7 +128,7 @@
 <body>
 
   <!-- תמונה צפה בצד -->
-  <img src="assets/pictuer.png" alt="Tech" class="floating-img">
+  <img src="assets/picture.webp" alt="Tech" class="floating-img">
 
   <header>
     Orel Teklya – Portfolio
