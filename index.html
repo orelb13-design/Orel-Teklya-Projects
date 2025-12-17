@@ -58,6 +58,7 @@
       transition: transform 0.5s ease, box-shadow 0.5s ease, background 1s ease;
       background-size: 200% 200%;
       animation: gradientShift 6s ease infinite;
+      position: relative;
     }
 
     /* אנימציית גרדיאנט דינמי */
@@ -67,7 +68,23 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* hover מתקדם */
+    /* אפקט glow (אור פנימי זורח) בעת hover */
+    .project-circle::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      top: 0; left: 0;
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+      transition: box-shadow 0.5s ease;
+      z-index: 0;
+    }
+
+    .project-circle:hover::after {
+      box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.6);
+    }
+
     .project-circle:hover {
       transform: translateY(-10px) rotate(-5deg) scale(1.08);
       box-shadow: 0 15px 35px rgba(0,0,0,0.25);
@@ -77,12 +94,16 @@
     .project-circle span.icon {
       font-size: 2.5em;
       margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
     }
 
     .project-circle p {
       margin: 0;
       font-size: 1em;
       padding: 0 5px;
+      position: relative;
+      z-index: 1;
     }
 
     footer {
