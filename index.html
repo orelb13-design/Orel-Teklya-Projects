@@ -4,193 +4,149 @@
   <meta charset="UTF-8">
   <title>Orel Teklya Portfolio</title>
   <style>
+    /* --- סגנון גוף האתר --- */
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f6fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
       margin: 0;
       padding: 0;
       color: #333;
+      line-height: 1.6;
     }
 
+    /* --- כותרת ראשית --- */
     header {
-      background: linear-gradient(135deg, #4e54c8, #8f94fb);
-      color: #fff;
+      background: linear-gradient(120deg, #6a11cb, #2575fc);
+      color: white;
       text-align: center;
       padding: 60px 20px;
-      font-size: 2.8em;
-      font-weight: bold;
-      border-radius: 0 0 20px 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-family: 'Arial Black', sans-serif;
+      font-size: 2.5em;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
+    /* --- קונטיינר לכל התוכן --- */
     .container {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
-    /* --- טקסט + תמונה בצד --- */
-    .header-content {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-    }
-
-    .header-content .text-content {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .header-content .image-content img {
-      max-width: 250px;
-      height: auto;
-      border-radius: 12px;
-    }
-
+    /* --- כותרות משנה --- */
     h2 {
+      color: #444;
       margin-top: 40px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #4e54c8;
+      border-bottom: 2px solid #2575fc;
+      padding-bottom: 5px;
     }
 
-    .projects-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .project {
-      width: 280px;
-      border-radius: 12px;
-      background-color: #fff;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-align: center;
-    }
-
-    .project h3 {
-      margin: 10px 0;
-      font-size: 1.2em;
-      color: #4e54c8;
-    }
-
-    .project p {
-      font-size: 0.95em;
+    h3 {
       color: #555;
-      margin: 5px 0 10px;
-      padding: 0 10px;
+      margin-top: 25px;
     }
 
-    .project a {
-      text-decoration: none;
-      color: #fff;
-      background-color: #4e54c8;
-      padding: 8px 12px;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-
-    .project a:hover {
-      background-color: #8f94fb;
+    /* --- קופסאות פרויקט --- */
+    .project {
+      background-color: white;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(78,84,200,0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
 
-    footer {
-      background: linear-gradient(135deg, #4e54c8, #8f94fb);
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-      border-radius: 12px 12px 0 0;
-      margin-top: 40px;
+    .project a {
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    footer a {
-      color: #fff;
+    .project a:hover {
       text-decoration: underline;
     }
 
-    @media (max-width: 768px) {
-      .header-content {
-        flex-direction: column;
-        align-items: center;
-      }
-      .header-content .image-content img {
-        max-width: 80%;
-        margin-top: 20px;
-      }
-      .projects-grid {
-        flex-direction: column;
-        align-items: center;
-      }
+    /* --- קו מפריד --- */
+    hr {
+      margin: 40px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+
+    /* --- פרטי קשר --- */
+    footer {
+      background-color: #2575fc;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+      border-radius: 12px 12px 0 0;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
+  <!-- כותרת ראשית -->
   <header>
-    Orel Teklya – Portfolio
+    Welcome to My Portfolio! 🎉
   </header>
 
+  <!-- תוכן האתר -->
   <div class="container">
-    <div class="header-content">
-      <div class="text-content">
-        <p>Hello, my name is <strong>Orel Teklya</strong> and I specialize in Data Analysis and BI.</p>
-      </div>
-      <div class="image-content">
-        <img src="assets/picture.webp" alt="Tech">
-      </div>
-    </div>
+    <p>Hello, my name is <strong>Orel Teklya</strong> and I specialize in Data Analysis and BI.</p>
+    <p>Welcome to my professional portfolio! Here you can find a collection of projects I completed in SQL, Python, and Power BI.</p>
 
+    <!-- SQL Projects -->
     <h2>📊 SQL Projects</h2>
-    <div class="projects-grid">
-      <div class="project">
-        <h3>Project 1 – SQL</h3>
-        <p>Database project for BI course.</p>
-        <a href="./SQL/Project_1.sql">Open File</a>
-      </div>
-      <div class="project">
-        <h3>Project 2 – SQL</h3>
-        <p>Advanced queries with CTEs.</p>
-        <a href="./SQL_2/Project_2.sql">Open File</a>
-      </div>
+
+    <div class="project">
+      <h3>🔹 Project 1 – SQL</h3>
+      <p>Brief description: Building a DATABASE as part of a project in the DATA ANALYST and BI Expert course.</p>
+      <p>📄 Open the file: <a href="./SQL/Project_1.sql">Project_1.sql</a></p>
     </div>
 
+    <div class="project">
+      <h3>🔹 Project 2 – SQL</h3>
+      <p>Brief description: Advanced SQL queries including window functions, CTEs, and complex data analysis.</p>
+      <p>📄 Open the file: <a href="./SQL_2/Project_2.sql">Project_2.sql</a></p>
+    </div>
+
+    <!-- Python Projects -->
     <h2>🐍 Python Projects</h2>
-    <div class="projects-grid">
-      <div class="project">
-        <h3>Project 1 – Python</h3>
-        <p>Pandas, ETL, data visualization.</p>
-        <a href="./PYTHON/project3a.ipynb">Open File</a>
-      </div>
+
+    <div class="project">
+      <h3>🔹 Project 1 – Python</h3>
+      <p>Brief description: Selecting and loading a DATABASE from the Central Bureau of Statistics, building queries with Pandas, visualization, and ETL scripting.</p>
+      <p>📄 Open the file: <a href="./PYTHON/project3a.ipynb">project3a.ipynb</a></p>
     </div>
 
+    <!-- Power BI Projects -->
     <h2>📈 Power BI Projects</h2>
-    <div class="projects-grid">
-      <div class="project">
-        <h3>Project 1 – Power BI</h3>
-        <p>Data analysis & interactive reports.</p>
-        <a href="./Power_BI/Project_4.pbix">Open PBIX</a>
-      </div>
+
+    <div class="project">
+      <h3>🔹 Project 1 – Power BI</h3>
+      <p>Brief description: Data analysis and visualization using Data Model, DAX, Visualizations, and Interactive Reports of Education report that combines school, student, grade, and teacher data.</p>
+      <p>📄 Open the file: <a href="./Power_BI/Project_4.pbix">Project_4.pbix</a> | <a href="./Power_BI/Project_4.pdf">PDF of Project_4</a></p>
     </div>
 
+    <hr>
+
+    <!-- פרטי קשר -->
     <footer>
       <p>📬 Contact Me</p>
-      <p>Phone: 052-3433709 | Email: <a href="mailto:orelb13@gmail.com">orelb13@gmail.com</a></p>
+      <p>Phone: 052-3433709</p>
+      <p>Email: <a href="mailto:orelb13@gmail.com">orelb13@gmail.com</a></p>
     </footer>
-  </div>
 
+  </div>
 </body>
 </html>
