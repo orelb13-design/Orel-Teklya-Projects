@@ -54,12 +54,14 @@
       color: #333;
       text-decoration: none;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: transform 0.5s ease, box-shadow 0.3s ease, background 0.3s ease;
     }
 
+    /* אנימציה בעת hover */
     .project-circle:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transform: translateY(-10px) rotate(-5deg) scale(1.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+      background: linear-gradient(135deg, #d0f0fd, #ffe0f0);
     }
 
     .project-circle span.icon {
